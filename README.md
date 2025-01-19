@@ -86,13 +86,15 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+  Checkout the 3, easy to follow setps below...
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
- ###### git
+The project doesnt have any spetial prerequisites, an installed git package, but the fact that you are on
+github makes that as a prerequisite laughable.
+
+
+###### - git
 
    ```sh
 dpkg -s git >/dev/null 2>&1
