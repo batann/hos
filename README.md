@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/batann/hos/images/logo.png">
-    <img src="images/logo.png" alt="Logo" width="512" height="512">
+    <img src="images/logo.png" alt="Logo" width="484" height="200">
   </a>
 
 <h3 align="center">LC-Linux</h3>
