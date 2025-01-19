@@ -1,5 +1,3 @@
-# readme
-
 <code>:s!readme! !g</code>
 <a id="readme-top"></a>
 
@@ -13,9 +11,10 @@
 <h3 align="center">LC-Linux</h3>
 
   <p align="center">
-    Work in progress,
-    intended was a light-weight linux distribution based on AntiX-base-OS
-    but it seems to....
+  Blocking via two or more hosts files.
+    lc-hosts script is supposed to create a flag within the user home directory,
+    for now, and create two host files, which can be alternated in order to block
+    or not, atm.
     <br />
     <a href="https://github.com/batann/hos"><strong>Explore the docs »</strong></a>
     <br />
