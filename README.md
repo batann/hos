@@ -92,31 +92,24 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* git
   ```sh
-  npm install npm@latest -g
+dpkg -s git >/dev/null 2>&1
+if [[ $? == 1 ]]; then
+echo -e "\033[34mInstalling \033[31m git \033[34m...\033[0m"
+sudo apt install -y git >/dev/null 2>&1
   ```
 
 ### Installation
+1. Get the repo
+2. Change Permissions on lc-hosts & install.sh
+3. Run Install
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/batann/hos.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin batann/hos
-   git remote -v # confirm the changes
-   ```
+```sh
+git clone https://github.com/batann/hos/
+sudo chmod a+x /home/$USER/hos/{install.sh/lc-hosts}
+sudo bash /home/$USER/hos/install.sh
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +118,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The lc-hosts file will be moved to /usr/bin/
+to toggle or change the level of blocking run lc-hosts
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
