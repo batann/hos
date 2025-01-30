@@ -52,11 +52,14 @@ fi
 block(){
 sudo mv /etc/hosts /etc/hosts.1
 sudo mv /etc/hosts.2 /etc/hosts
+DOMAINS=$(cat /etc/hosts |wc -l)
+
 }
 
 un_block(){
 sudo mv /etc/hosts /etc/hosts.2
 sudo mv /etc/hosts.1 /etc/hosts
+DOMAINS=$(cat /etc/hosts |wc -l)
 }
 
 
