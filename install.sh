@@ -9,4 +9,4 @@ sudo mv hosts.1 /etc/hosts
 sudo mv hosts.2 /etc/hosts.2
 sudo mv lc-hosts /usr/bin
 sudo chmod a+x /usr/bin/lc-*
-
+/usr/bin/lc-hosts
