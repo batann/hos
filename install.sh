@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [[ -f /etc/hosts ]];then
 sudo mv /etc/hosts /etc/hosts.original
 fi
