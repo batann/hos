@@ -7,6 +7,9 @@ fi
 sudo chown root:root /home/batan/hos/{hosts.1,hosts.2}
 sudo mv hosts.1 /etc/hosts
 sudo mv hosts.2 /etc/hosts.2
+if [[ -f /usr/bin/lc-hosts ]]; then
+sudo mv /usr/bin/lc-hosts /usr/bin/lc-hosts.org
+fi
 sudo mv lc-hosts /usr/bin
 sudo chmod a+x /usr/bin/lc-*
 /usr/bin/lc-hosts
